@@ -1,15 +1,31 @@
-== First Twitter app
+# Tweet-app
 
-Here I am building my first Twitter app on Rails.
+* <h2>Ruby version:</h2> 2.3.1
 
-* Ruby version			: 2.3.1
+* <h2>Rails version:</h2> 4.2.6
 
-* Rails version			: 4.2.6
+## Getting started
 
-* Deployment instructions
+To get started with the app, clone the repo and then install the needed gems:
 
-* ...
+```
+$ bundle install --without production
+```
 
+Next, migrate the database:
 
+```
+$ rails db:migrate
+```
 
-<tt>rake doc:app</tt>.
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
